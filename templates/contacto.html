@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+        <main>
+            <div class="box-msj">
+                <span>Envíanos tu mensaje usando el siguiente formulario...</span>
+            </div>
+            <div class="div_formulario">
+                <fieldset>
+                    <legend>CONTACTO</legend>
+                    <form action="https://sheetdb.io/api/v1/yjx4b6o4pxlt0" method="POST" id="formulario" novalidate>
+                        <div class="div-left-contact">
+                            <div class="div_name_username">
+                                <div>
+                                    <label for=""> Apellido: </label>
+                                    <input type="text" id="apellido" required />
+                                </div>
+                                <div>
+                                    <label for="">Nombre:</label>
+                                    <input type="text" id="nombre" required />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="">Email:</label>
+                                <input
+                                    class="input_email"
+                                    id="email"
+                                    type="email"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label for="">Asunto:</label>
+                                <input
+                                    class="input_email"
+                                    id="asunto"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="div-right-contact">
+                            <img src="{% static 'media/img/contacto/email.png' %}" alt="" />
+                        </div>
+
+                        <label for="">Mensaje:</label>
+                        <textarea
+                            id="mensaje"
+                            name="textarea"
+                            rows="8"
+                            cols="100"
+                            placeholder="Escribe aquí tu mensaje..."
+                            required
+                        ></textarea>
+
+                        <div class="div-form-bottom">
+                            <div class="div-botones-form">
+                                <input type="submit" value="ENVIAR MENSAJE" />
+                            </div>
+                        </div>
+                        <div id="MensajeEnviado"></div>
+                    </form>
+                </fieldset>
+            </div>
+        </main>
+        {% block styles %}
+        <link rel="stylesheet" href="{% static './css/contacto/contacto.css' %}" />
+        {% endblock %}
+        {% endblock %}
