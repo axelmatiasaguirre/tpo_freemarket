@@ -4,5 +4,5 @@
 
 #El deploy se puede ver en http://axel99.pythonanywhere.com/
 
-#Los datos de contacto son guardados usando la API SheetDB.
+#Los datos cargados en Contacto son guardados usando la API SheetDB.
 https://docs.google.com/spreadsheets/d/1FxpyrYcZpOx252HRi4MZfgAJzLuMuzbiKF6ZjHu_yuk/edit
