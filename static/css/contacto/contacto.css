@@ -8,6 +8,7 @@
     --init-text: #fbb583;
     --background: #fdce9b;
     --form: #ffe7b2;
+    box-sizing: border-box;
 }
 
 body,
