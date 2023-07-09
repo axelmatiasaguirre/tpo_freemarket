@@ -13,3 +13,6 @@ def sucursales(request):
 
 def contacto(request):
     return render(request, 'contacto.html')
+
+def venta_productos(request):
+    return render(request, 'vender_productos.html')

@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-m@8l-d6fma$mc7sy(89t3zi85rv+s$7!isygyb*rs3wtxv#^jt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["axel99.pythonanywhere.com"]
-#ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+#ALLOWED_HOSTS = ["axel99.pythonanywhere.com"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
@@ -125,8 +125,8 @@ STATIC_ROOT = BASE_DIR / "static"
 
 #STATIC_ROOT = 'TPO/static/'
 #STATICFILES_DIRS = [
-    # Ruta a la carpeta "static" dentro de tu proyecto
-#    os.path.join(BASE_DIR, 'static'),
+   # Ruta a la carpeta "static" dentro de tu proyecto
+#    os.path.join(BASE_DIR, '/static/'),
 #]
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 

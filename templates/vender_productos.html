@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+        <main>
+            <div class="box-msj">
+                <span
+                    >Para vender productos completa el siguiente
+                    formulario...</span
+                >
+            </div>
+            <div>
+                <fieldset>
+                    <legend>PRODUCTOS</legend>
+                    <form action="" method="POST">
+                        <div class="div-form-left">
+                            <div>
+                                <label for=""> Nombre de usuario: </label>
+                                <input type="text" required />
+                            </div>
+                            <hr />
+                            <div>
+                                <label for="">Producto:</label>
+                                <input
+                                    type="text"
+                                    placeholder="Ej:Notebook Dell 3410"
+                                    required
+                                />
+                            </div>
+                            <br />
+                            <div>
+                                <label for="">Categoría:</label>
+                                <input
+                                    type="text"
+                                    placeholder="Ej: informática"
+                                    required
+                                />
+                            </div>
+                            <br />
+                            <div class="box-estado">
+                                <span>Estado:</span>
+                                <div>
+                                    <input
+                                        name="si"
+                                        type="radio"
+                                        id=""
+                                        value="no"
+                                        checked
+                                    />
+                                    <label for="">nuevo</label>
+                                    <br />
+                                    <input
+                                        name="si"
+                                        type="radio"
+                                        id=""
+                                        value="no"
+                                    />
+                                    <label for="">usado</label>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="div-unidades-peso">
+                                <div>
+                                    <label for="">Unidades:</label>
+                                    <input
+                                        type="number"
+                                        placeholder="Ej: 2"
+                                        min="1"
+                                        step="1"
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label for="">Peso unitario:</label>
+                                    <input
+                                        type="number"
+                                        placeholder="Ej: 4.5"
+                                        min="0"
+                                        step="0.001"
+                                        required
+                                    />
+                                    <label for="">kg</label>
+                                </div>
+                            </div>
+
+                            <br />
+                            <div>
+                                <label for=""
+                                    >Alguna descripción (opcional):</label
+                                >
+                                <br />
+                                <textarea
+                                    name="textarea"
+                                    rows="5"
+                                    cols="50"
+                                    placeholder="Ej: Las notebooks tienen 2 meses de uso. Sirven para diseño gráfico y edición de videos..."
+                                ></textarea>
+                            </div>
+                            <br />
+                            <div>
+                                <label for="">Precio (ARS): $</label>
+                                <input
+                                    type="number"
+                                    min="1"
+                                    step="0.01"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="div-form-right">
+                            <label for="upload"
+                                >Haga clic en esta área para subir las fotos de
+                                su producto...</label
+                            >
+                            <div>
+                                <input
+                                    class="control"
+                                    type="file"
+                                    name=""
+                                    id="upload"
+                                    accept=".jpg,.png"
+                                    multiple
+                                    required
+                                />
+                            </div>
+
+                            <span>Ten en cuenta:</span>
+                            <ul class="ul-nota">
+                                <li>
+                                    -> Las fotos deben tener extensión ".jpg" o
+                                    ".png".
+                                </li>
+                                <li>-> Toma fotos desde diferentes ángulos.</li>
+                                <li>-> Asegúrate que salgan nítidas.</li>
+                            </ul>
+                        </div>
+                        <div class="div-form-bottom">
+                            <div class="div-botones-form">
+                                <input type="submit" value="ENVIAR" />
+                                <input type="reset" value="RESETEAR" />
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </main>
+        {% block styles %}
+        <link rel="stylesheet" href="{% static './css/vender/productos.css' %}" />
+        {% endblock %}
+        {% endblock %}
