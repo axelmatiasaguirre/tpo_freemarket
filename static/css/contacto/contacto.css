@@ -51,7 +51,6 @@ main {
 }
 footer {
     grid-area: footer;
-    width: 100vw;
 }
 
 .items {
@@ -316,7 +315,7 @@ label{
 footer {
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #f68354;
     text-align: center;
     padding: 10px;
