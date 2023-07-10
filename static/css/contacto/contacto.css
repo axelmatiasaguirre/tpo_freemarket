@@ -315,7 +315,7 @@ label{
 footer {
     position: relative;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     background-color: #f68354;
     text-align: center;
     padding: 10px 0px;
