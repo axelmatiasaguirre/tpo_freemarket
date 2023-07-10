@@ -43,6 +43,7 @@ footer {
         "footer";
     grid-template-columns: auto;
     grid-template-rows: max-content;
+    width: 99%;
 }
 
 header {
