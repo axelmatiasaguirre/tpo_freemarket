@@ -17,6 +17,7 @@ footer {
     margin: 0;
     padding: 0;
     height: max-content;
+    width: 100vw;
 }
 
 header {
