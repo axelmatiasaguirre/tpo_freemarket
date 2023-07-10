@@ -32,7 +32,7 @@ footer {
 }
 
 .container {
-    background-color: red;
+    background-color: darkslategrey;
 
     display: grid;
     grid-template-areas:
@@ -41,7 +41,6 @@ footer {
         "footer";
     grid-template-columns: auto;
     grid-template-rows: max-content;
-    width: 100vw;
 }
 
 header {
@@ -52,6 +51,7 @@ main {
 }
 footer {
     grid-area: footer;
+    width: 100vw;
 }
 
 .items {
