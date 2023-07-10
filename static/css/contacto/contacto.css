@@ -22,7 +22,6 @@ footer {
 
 header {
     background-color: var(--background);
-    box-sizing: border-box;
 }
 
 main {
