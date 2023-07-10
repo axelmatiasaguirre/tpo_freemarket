@@ -41,7 +41,6 @@ footer {
         "footer";
     grid-template-columns: auto;
     grid-template-rows: max-content;
-    width: 99%;
 }
 
 header {
@@ -49,6 +48,7 @@ header {
 }
 main {
     grid-area: main;
+    width: 99%;
 }
 footer {
     grid-area: footer;
