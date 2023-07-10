@@ -8,7 +8,6 @@
     --init-text: #fbb583;
     --background: #fdce9b;
     --form: #ffe7b2;
-    box-sizing: border-box;
 }
 
 body,
@@ -33,7 +32,7 @@ footer {
 }
 
 .container {
-    background-color: darkslategrey;
+    background-color: darkblue;
 
     display: grid;
     grid-template-areas:
@@ -42,7 +41,7 @@ footer {
         "footer";
     grid-template-columns: auto;
     grid-template-rows: max-content;
-    width: max-content;
+    width: 100vw;
 }
 
 header {
